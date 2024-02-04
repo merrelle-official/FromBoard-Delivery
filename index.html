@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__info">
+            <a class="logo" href="#">
+                <img class="logo__img" src="./img/logo.svg" alt="Logo">
+                <p class="logo__name">FromBoard Delivery</p>
+            </a>
+            <div class="info__right">
+                <div class="header__info__text">
+                    <p>Доставляем товары из заграницы в Россию</p>
+                    <p>Стоимость от 550 рублей за заказ</p>
+                    <p>1 $ = 93 ₽ | 1 € = 99 ₽ | 1 ¥ = 13 ₽</p>
+                </div>
+                <div class="info__number">
+                    <h1 class="number">+7 (800-12) 3-45-67</h1>
+                    <p class="calls">Звонки по России бесплатны</p>
+                </div>
+            </div>
+        </div>
+        <div class="header_navigation">
+            <nav class="main__nav">
+                <ul class="nav__list">
+                    <a class="nav_elem" href="#calculator"><li>Калькулятор</li></a>
+                    <a class="nav_elem" href="#about"><li>О нас</li></a>
+                    <a class="nav_elem" href="#"><li>Гарантии</li></a>
+                    <a class="nav_elem" href="#"><li>Отзывы</li></a>
+                </ul>
+            </nav>
+            <a class="btn" href="#calculator">Оставить заявку</a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__calculator" id="calculator">
+            <div class="main__info">
+                <h1 class="main__info__label">Без проблемная доставка купленных вещей из США, Европы и Азии в Россию</h1>
+                <p class="main__info__text">Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш сервис позволяет вам легко и удобно заказывать товары со всего мира и получать их в России</p>
+                <img src="./img/InfoImg.png" alt="InfoImg">
+            </div>
+            <form id="calc__from">
+                <h2 class="form__name">Калькулятор доставки</h2>
+                <p class="form__description">Посчитайте, сколько будет стоить<br> перевозка покупки из зарубежа</p>
+                <div class="form__inputs">
+                    <input id="name" type="text" placeholder="Имя">
+                    <input id="email" type="text" placeholder="Почта">
+                    <input id="phone" type="text" placeholder="Телефон">
+                    <input id="square" type="number" placeholder="Общая площадь, м²">
+                    <input id="weight" type="number" placeholder="Вес, кг">
+                    <input id="country-buy" type="text" placeholder="Страна покупки">
+                    <input id="city-buy" type="text" placeholder="Город покупки">
+                    <input id="area-delivery" type="text" placeholder="Область доставки">
+                    <input id="city-delivery" type="text" placeholder="Город доставки">
+                </div>
+                <button class="btn submit">Заказать расчёт</button>
+            </form>
+        </section>
+        <section id="about">
+            <h1 class="about__title">Наши преимущества</h1>
+            <div class="about__wrapper">
+                <div class="about__card">
+                    <img src="./img/About1.svg" alt="About1" class="card__img">
+                    <div>
+                        <h2 class="card__title">Растоможка груза</h2>
+                        <p class="card__text">Мы берём на себя все формальности и бумажную волокиту, связанную с растаможкой груза</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <img src="./img/About2.svg" alt="About2" class="card__img">
+                    <div>
+                        <h2 class="card__title">Надёжная упаковка</h2>
+                        <p class="card__text">Все товары упаковываются нашими специалистами с особым вниманием к деталям, гарантируя, что они дойдут в безопасности и в отличном состоянии</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <img src="./img/About3.svg" alt="About3" class="card__img">
+                    <div>
+                        <h2 class="card__title">Быстро и выгодно</h2>
+                        <p class="card__text">Мы предлагаем быструю и выгодную доставку, чтобы вы могли насладиться покупками как можно скорее.</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <img src="./img/About4.svg" alt="About4" class="card__img">
+                    <div>
+                        <h2 class="card__title">Удобный сервис</h2>
+                        <p class="card__text">Стремимся сделать процесс доставки максимально удобным для вас, чтобы опыт остался приятным и беззаботным</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <img src="./img/About5.svg" alt="About5" class="card__img">
+                    <div>
+                        <h2 class="card__title">Прозрачность работы</h2>
+                        <p class="card__text">Мы предоставляем полный контроль над каждым этапом доставки, от момента заказа до момента прибытия заказа</p>
+                    </div>
+                </div>
+                <div class="about__card">
+                    <img src="./img/About6.svg" alt="About6" class="card__img">
+                    <div>
+                        <h2 class="card__title">Страхование груза</h2>
+                        <p class="card__text">Наше страхование обеспечивает полную защиту и покрытие почти все неприятные и неожиданные ситуации</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="guarantees">
+            <h1 class="guarantees__title">Гарантии качества</h1>
+            <p class="guarantees__desc">Наши гарантии качества включают в себя полный спектр документов, необходимых для ввоза и вывоза товаров, а также для успешного бизнеса на мировом рынке.<br>Мы предоставляем вам надёжность и уверенность</p>
+            <div class="guarantees__wrapper">
+                <div class="guarantees__card">
+                    <img src="./img/Garant1.png" alt="Garant1" class="guarantees__img">
+                    <p class="guarantees__text">Свидетельство о регистрации в РФ</p>
+                </div>
+                <div class="guarantees__card">
+                    <img src="./img/Garant2.png" alt="Garant2" class="guarantees__img">
+                    <p class="guarantees__text">Свидетельство о регистрации в США</p>
+                </div>
+                <div class="guarantees__card">
+                    <img src="./img/Garant3.png" alt="Garant3" class="guarantees__img">
+                    <p class="guarantees__text">Свидетельство о регистрации в Китае</p>
+                </div>
+                <div class="guarantees__card">
+                    <img src="./img/Garant4.png" alt="Garant4" class="guarantees__img">
+                    <p class="guarantees__text">Свидетельство о регистрации в Великобритнии</p>
+                </div>
+            </div>
+            <button class="btn">Показать больше документов</button>
+        </section>
+        <section id="feedback">
+            <h1 class="feedback__title">Отзывы</h1>
+            <div class="feedback__wrapper">
+                <button id="prev-feedback" class="arrow__left"><img src="./img/ArrowLeft.svg" alt="left"></button>
+                <div class="feedback__display">
+                    <div class="feedback__cards">
+                        <div class="feedback__card">
+                            <p class="feedback__text">Я уже несколько лет заказываю дизайнерскую одежду из Франции через ваш сервис, и он никогда меня не подводил. Важно иметь надежную компанию, которая позаботится о вашем заказе и предоставит все необходимые документы для ввоза в Россию</p>
+                            <p class="feedback__name">Ольга</p>
+                            <img src="./img/commas.png" alt="commas" class="feedback__img">
+                        </div>
+                        <div class="feedback__card">
+                            <p class="feedback__text">Заказал шикарные часы из Швейцарии, и доставка была невероятно быстрой. Ваш сервис делает интернет-шоппинг более доступным и удобным</p>
+                            <p class="feedback__name">Игорь</p>
+                            <img src="./img/commas.png" alt="commas" class="feedback__img">
+                        </div>
+                        <div class="feedback__card">
+                            <p class="feedback__text">Ваш сервис действительно изменил мой способ покупок. Я больше не переживаю о таможенных вопросах и документах - все у вас в порядке. Спасибо за ваше качество и надежность</p>
+                            <p class="feedback__name">Екатерина</p>
+                            <img src="./img/commas.png" alt="commas" class="feedback__img">
+                        </div>
+                        <div class="feedback__card">
+                            <p class="feedback__text">Я заказал редкий антикварный предмет из Японии через ваш сервис, и остался впечатлен. Все пришло в отличном состоянии, и ваша гарантия качества действительно работает. Спасибо за ваше профессиональное обслуживание</p>
+                            <p class="feedback__name">Дмитрий</p>
+                            <img src="./img/commas.png" alt="commas" class="feedback__img">
+                        </div>
+                        <div class="feedback__card">
+                            <p class="feedback__text">Я заказал редкий антикварный предмет из Японии через ваш сервис, и остался впечатлен. Все пришло в отличном состоянии, и ваша гарантия качества действительно работает. Спасибо за ваше профессиональное обслуживание</p>
+                            <p class="feedback__name">Дмитрий</p>
+                            <img src="./img/commas.png" alt="commas" class="feedback__img">
+                        </div>
+                    </div>
+                </div>
+                <button id="next-feedback" class="arrow__right"><img src="./img/ArrowRight.svg" alt="right"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="script.js"></script>
+</body>
+</html>

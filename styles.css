@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "Formular Bold";
+    src: url(./fonts/Formular-Black.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "Formular Light";
+    src: url(./fonts/Formular-Light.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "Formular";
+    src: url(./fonts/Formular.woff2) format('woff2');
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Formular";
+    font-weight: 400;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-weight: normal;
+    border: none;
+}
+
+body{
+    background-color: #E5E7EB;
+}
+
+h1{
+    font-size: 35px;
+    font-family: "Formular Bold";
+}
+
+input{
+    border-radius: 4px;
+    border: black 2px solid;
+    padding: 12px;
+}
+
+.header{
+    width: 100%;
+    background-color: #F9FAFB;
+    padding: 24px 0;
+}
+
+.header>*{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.header__info{
+    margin-bottom: 24px;
+}
+
+.logo{
+    
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+}
+
+.logo:hover>.logo__name{
+    color: #A78BFA;
+}
+
+.logo__img{
+    width: 50px;
+    height: 74px;
+}
+
+.logo__name{
+    font-size: 24px;
+    font-family: "Formular Bold";
+    transition: all 0.2s linear;
+}
+
+.info__right>*{
+    display: inline-block;
+    padding: 1px 8px;
+}
+
+.header__info__text{
+    border-right: #A78BFA 1px solid;
+}
+
+.header__info__text p{
+    padding: 1px 0;
+    font-size: 16px;
+    text-align: end;
+}
+
+.calls{
+    font-size: 24px;
+}
+
+.header_navigation{
+    align-items: center;
+}
+
+.nav_elem{
+    display: inline-block;
+}
+
+.nav_elem:not(:last-child){
+    margin-right: 24px;
+}
+
+.nav_elem>li{
+    font-weight: 600;
+    transition: all 0.2s linear;
+}
+
+.nav_elem:hover>li{
+    color: #A78BFA;
+}
+
+.btn{
+    padding: 13px 31px;
+    background-color: #8B5CF6;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.2s linear;
+}
+
+.btn:hover{
+    background-color: #CAB8FF;
+    cursor: pointer;
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__info{
+    max-width: 50%;
+}
+
+.main__info img{
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.main__info__label,
+.main__info__text{
+    margin-bottom: 16px;
+}
+
+.main__info__text{
+    font-size: 20px;
+}
+
+.main__calculator{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 72px 0;
+}
+
+.main__calculator>*{
+    flex: 1;
+}
+
+#calc__from{
+    background-color: white;
+    border-radius: 16px;
+    padding: 24px 130px;
+    box-sizing: border-box;
+    max-width: 50%;
+    text-align: center;
+}
+
+.form__name{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.form__description{
+    margin-bottom: 28px;
+}
+
+.form__inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.form__inputs>:first-child{
+    grid-column: span 2;
+}
+
+.submit{ 
+    width: 100%;
+}
+
+#about{
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.about__title{
+    margin-bottom: 24px;
+}
+
+.about__wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.about__card{
+    display: flex;
+    padding: 24px;
+    text-align: start;
+    align-items: center;
+}
+
+.about__card .card__img{
+    width: 136px;
+    height: 136px;
+    padding: 10px;
+    margin-right: 12px;
+}
+
+.about__card .card__title{
+    font-size: 24px;
+    font-family: "Formular Bold";
+    margin-bottom: 12px;
+}
+
+.about__card .card__text{
+    font-size: 16px;
+}
+
+#guarantees{
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.guarantees__title{
+    margin-bottom: 12px;
+}
+
+.guarantees__desc{
+    
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.guarantees__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.guarantees__wrapper .guarantees__text{
+    font-size: 18px;
+    font-family: "Formular Bold";
+}
+
+#feedback{
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.feedback__title{
+    margin-bottom: 32px;
+}
+
+.arrow__left, .arrow__right{
+    background-color: transparent;
+    height: 60px;
+}
+
+.arrow__left{
+    margin-left: 23px;
+    margin-right: 47px;
+}
+
+.arrow__left:disabled{
+     opacity: 0.5;
+}
+
+.arrow__right{
+    margin-right: 23px;
+    margin-left: 47px;
+}
+
+.arrow__right:disabled{
+    opacity: 0.5;
+}
+
+.feedback__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.feedback__display{
+    overflow: hidden;
+
+}
+
+.feedback__cards{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    position: relative;
+    left: 0;
+    transition: all 0.2s linear;
+}
+
+.feedback__card{
+    flex: 0 0 49%;
+    border-radius: 16px;
+    background-color: #F9FAFB;
+    text-align: start;
+    padding: 32px 43px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.feedback__text{
+    flex: 1;
+    font-size: 22px;
+    font-family: "Formular Bold";
+    margin-bottom: 30px;
+}
+
+.feedback__name{
+    bottom: 0;
+    font-size: 26px;
+    font-family: "Formular Light";
+    font-weight: 100;
+    color: #6B7280;
+}
+
+.feedback__img{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
